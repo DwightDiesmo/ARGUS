@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% block title %} Activity Page {% endblock %}
+{% block content %}
+
+<div class="container bg-graphite border-bright-yellow-crayola rounded px-5" id="Recording-Table-List">
+    <div class="py-5">
+        <div class="row mb-4">
+            <div class="col-lg-6 col-12">
+                <div class="card bg-graphite border-bright-yellow-crayola">
+                    <div class="card-body">
+                        <img src="/static/data/image/{{activityData[0]}}.jpg"
+                             alt="" class="img-fluid w-100">
+                        <audio class="w-100 pt-3" controls>
+                            <source src="/static/data/audio/{{activityData[0]}}.wav" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="row">
+                    <div class="card bg-graphite border-bright-yellow-crayola">
+                        <div class="card-body text-white">
+                            <div class="p-2">
+                                <div class="fw-bolder">ID</div>
+                                <div class="fw-light">{{activityData[0]}}</div>
+                            </div>
+                            <!--                        <div class="p-2">-->
+                            <!--                            <div class="fw-bolder">DATE</div>-->
+                            <!--                            <div class="fw-light">2.15.22</div>-->
+                            <!--                        </div>-->
+                            <div class="p-2">
+                                <div class="fw-bolder">TIMESTAMP</div>
+                                <div class="fw-light">{{time}}</div>
+                            </div>
+                            <div class="p-2">
+                                <div class="fw-bolder">LATITUDE</div>
+                                <div class="fw-light">{{latitude}}</div>
+                            </div>
+                            <div class="p-2">
+                                <div class="fw-bolder">LONGITUDE</div>
+                                <div class="fw-light">-{{longitude}}</div>
+                            </div>
+                            <div class="p-2">
+                                <div class="fw-bolder">EXPORT</div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="/static/data/image/{{activityData[0]}}.jpg"
+                                           class="p text-snow-sunset fw-light" download>Image</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="/static/data/audio/{{activityData[0]}}.wav"
+                                           class="p text-snow-sunset fw-light" download>Audio</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-white">
+                    <div class="card bg-graphite border-bright-yellow-crayola text-white p-4">
+                        <div class="row">
+                            <div class="col-lg-4 col-12">
+                                <h5 class="">X Axis</h5>
+                                <a href="/static/data/seismic/x-{{activityData[0]}}.png" class="" target="_blank">
+                                    <img src="/static/data/seismic/x-{{activityData[0]}}.png" alt="" class="w-100">
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-12">
+                                <h5 class="">Y Axis</h5>
+                                <a href="/static/data/seismic/y-{{activityData[0]}}.png" class="" target="_blank">
+                                    <img src="/static/data/seismic/y-{{activityData[0]}}.png" alt="" class="w-100">
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-12">
+                                <h5 class="">Z Axis</h5>
+                                <a href="/static/data/seismic/z-{{activityData[0]}}.png" class="" target="_blank">
+                                    <img src="/static/data/seismic/z-{{activityData[0]}}.png" alt="" class="w-100">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

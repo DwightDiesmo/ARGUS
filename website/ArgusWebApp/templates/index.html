@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %} Home {% endblock %}
+{% block content %}
+
+<div class="container bg-graphite border-bright-yellow-crayola rounded px-5" id="Recording-Table-List">
+    <div class="py-5">
+        {% for i in range(maxID, 0, -1) %}
+        <div class="row py-3">
+            <div class="col-lg-2 col-md-3 col-12">
+                <img src="/static/data/image/{{activities[i][0]}}.jpg" alt="" class="card-img">
+            </div>
+            <div class="col-lg-10 col-md-9 col-12 pb-5">
+                <div class="card bg-sunset rounded-top">
+                    <div class="card-body">
+                        <div class="text-white"><b>ID:</b> {{activities[i][0]}}</div>
+                        <div class="text-white"><b>LATITUDE:</b> {{gpsData[i][0]}}</div>
+                        <div class="text-white"><b>LONGITUDE:</b> {{gpsData[i][1]}}</div>
+                        <div class="text-white mb-2"><b>TIME STAMP:</b> {{gpsData[i][2]}}</div>
+                        <a href="{{url_for('activityPage', activityID=activities[i][0])}}" class="btn btn-block btn-dark w-100 text-decoration-none">
+                            View
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

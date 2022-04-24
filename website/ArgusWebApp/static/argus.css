@@ -1,0 +1,40 @@
+ body {
+    overflow-x: hidden;
+  }
+
+
+  .bg-graphite {
+    background-color: #1E1E1E;
+  }
+  .bg-jet {
+    background-color: #2B2B2B;
+  }
+
+  .bg-sunset {
+    background: -webkit-linear-gradient(#F27235, #FDC82F);
+    background-image: linear-gradient(to right, #F27235, #FDC82F);
+  }
+
+  .text-sunset {
+    /* font-size: 72px; */
+    background: -webkit-linear-gradient(#F27235, #FDC82F);
+    background: linear-gradient(to right, #F27235, #FDC82F);
+    font-weight: bolder;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .border-bright-yellow-crayola {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #F9A826;
+  }
+
+  a.text-snow-sunset {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  a.text-snow-sunset:hover {
+    color:#F27235;
+    transition-duration: 0.8s;
+  }

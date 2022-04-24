@@ -1,0 +1,10 @@
+C:\Users\dwigh\PycharmProjects\ARGUS_Fog\formatted
+C:\Users\dwigh\PycharmProjects\ARGUS_Fog\parsed\audio
+C:\Users\dwigh\PycharmProjects\ARGUS_Fog\parsed\gps
+C:\Users\dwigh\PycharmProjects\ARGUS_Fog\parsed\image
+C:\Users\dwigh\PycharmProjects\ARGUS_Fog\parsed\seismic
+C:\Users\dwigh\PycharmProjects\ARGUS_Fog\processed\audio
+C:\Users\dwigh\PycharmProjects\ARGUS_Fog\processed\gps
+C:\Users\dwigh\PycharmProjects\ARGUS_Fog\processed\image
+C:\Users\dwigh\PycharmProjects\ARGUS_Fog\processed\seismic\csv
+C:\Users\dwigh\PycharmProjects\ARGUS_Fog\processed\seismic\plot
